@@ -7,7 +7,7 @@ library(ggrepel)
 library(infercnv)
 library(phylogram)
 
-### Rscirpt for Figure 3A, 3B, 3F, 3G, S5A, S5B, S5C
+### Rscirpt for Figure 3A, 3B, 3G, S6A, S6B, S6C
 
 ### define colors panel
 colors.FeaturePlot <- c("lightgrey","red")

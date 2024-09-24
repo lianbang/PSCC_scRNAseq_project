@@ -5,7 +5,7 @@ library(MySeuratWrappers)
 library(ggplot2)
 library(paletteer)
 
-### Rscirpt for Figure 1B, 1C, S2E
+### Rscirpt for Figure 1B, 1C, S2D
 
 ### define colors panel
 colors.FeaturePlot <- c("lightgrey","red")
@@ -113,6 +113,15 @@ DimPlot(PSCC10X3.combined,reduction = "umap",order=T, label = F, cols = colors.T
 
 DefaultAssay(PSCC10X3.combined) <- "RNA"
 FeaturePlot(PSCC10X3.combined,c("PTPRC","KRT5","PECAM1","COL6A2"),order = T,cols = colors.FeaturePlot, raster = T, ncol = 4,pt.size = 1)
+
+DotPlot(PSCC10X3.combined,features = c("PTPRC","KRT5","PECAM1","RAMP2","SELE","VWF","ACKR1","COL6A2","COL1A1","COL3A1","LUM","CFD","DCN"),cols = colors.FeaturePlot) +coord_flip()+
+  theme_classic()+
+  theme(axis.title.x = element_blank(),
+        axis.title.y.left = element_blank(),
+        axis.title.y = element_text(colour="black", size=12),
+        axis.text.x = element_text(angle =45,size=12,colour="Black",hjust = 1,vjust=1),
+        axis.text.y = element_text(angle =0,size=12,colour="Black",hjust = 0.5,vjust=1))
+
 #DotPlot(PSCC10X3.combined,features = c("PTPRC","KRT5","PECAM1","COL6A2"))
 
 #MySeuratWrappers::VlnPlot(PSCC10X3.combined,features = c("PTPRC","KRT5","CAFs.genes","EC.genes"),pt.size =0,stack=T,x.lab = "",y.lab = "",direction = "horizontal")+

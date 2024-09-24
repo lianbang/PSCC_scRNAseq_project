@@ -10,7 +10,7 @@ library(ggsci)
 library(clusterProfiler) # bitr
 library(org.Hs.eg.db)
 
-### Rscirpt for Figure 3A, 3B, 3D, 3E, 3F, 3G, 3H
+### Rscirpt for Figure 3A, 3B, S4A, S4B, S4C, S4G, S4E
 
 ### define colors panel
 colors.FeaturePlot <- c("lightgrey","red")

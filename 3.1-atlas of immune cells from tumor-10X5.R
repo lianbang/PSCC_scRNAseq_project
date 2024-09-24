@@ -5,8 +5,6 @@ library(MySeuratWrappers)
 library(ggplot2)
 library(paletteer)
 
-### Rscirpt for Figure S3B, S3C
-
 ### define colors panel
 colors.FeaturePlot <- c("lightgrey","red")
 colors.umap <- paletteer_d("ggsci::default_igv")

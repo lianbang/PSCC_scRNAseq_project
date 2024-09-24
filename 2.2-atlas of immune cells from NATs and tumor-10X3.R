@@ -5,7 +5,7 @@ library(MySeuratWrappers)
 library(ggplot2)
 library(paletteer)
 
-### Rscirpt for Figure 1I, 1J, 2A, 2B, S2G, S3A
+### Rscirpt for Figure 1I, 1J, 2A, 2B, S2F, S2G
 
 ### define colors panel
 colors.FeaturePlot <- c("lightgrey","red")

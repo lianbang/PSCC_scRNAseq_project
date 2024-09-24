@@ -5,7 +5,7 @@ library(MySeuratWrappers)
 library(ggplot2)
 library(paletteer)
 
-### Rscirpt for Figure S2A, S2B, S2D
+### Rscirpt for Figure S2A, S2C
 
 ### read cellranger output files
 # All genes: 36601
